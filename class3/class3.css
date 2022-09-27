@@ -1,0 +1,108 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+/* When the shorthand margin property has two values, it sets margin-top and margin-bottom to the first value, and margin-left and margin-right to the second value. */
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.cap {
+  width: 60px;
+  height: 25px;
+}
+
+.sleeve {
+  width: 110px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap,
+.sleeve {
+  display: inline-block;
+}
+/* 0~255  255*3是白色 0*3是黑色*/
+/* 沒有為 linear-gradient 函數提供 gradientDirection 參數，則默認情況下，它會從上到下或沿 180 度線排列顏色。 */
+.red {
+  background: linear-gradient(
+    rgb(122, 74, 14),
+    rgb(245, 62, 113),
+    rgb(162, 27, 27)
+  );
+  /* box-shadow: offsetX offsetY blurRadius spreadRadius color */
+  /* blurRadius 的值越高，模糊效果越大，默認為 0 */
+  /* spreadRadius 擴大陰影，默認為 0 */
+  /* rgba(redValue, greenValue, blueValue, alphaValue( 0 to 1.0) */
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+.pink {
+  background: linear-gradient(
+    rgb(122, 55, 14),
+    rgb(245, 62, 199),
+    rgb(162, 76, 27)
+  );
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+.orange {
+  background: linear-gradient(
+    rgb(122, 97, 14),
+    rgb(245, 135, 62),
+    rgb(162, 130, 27)
+  );
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+.yellow {
+  background: linear-gradient(
+    rgb(122, 118, 14),
+    rgb(242, 245, 62),
+    rgb(157, 162, 27)
+  );
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+/* #(Hex) color values start with a # character and take six characters from 0-9 and A-F. The first pair of characters represent red, the second pair represent green, and the third pair represent blue. */
+.citron {
+  background: linear-gradient(#53680d, #b4e854, #456c11);
+  box-shadow: 0 0 20px 0 #3b7e20cc;
+}
+.green {
+  background: linear-gradient(#1e680d, #71f53e, #116c6b);
+  box-shadow: 0 0 20px 0 #3b7e20cc;
+}
+/* The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness. */
+/* the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees. */
+/* Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. */
+/* Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral. */
+.sea_foam {
+  background: linear-gradient(
+    hsl(184, 76%, 16%),
+    hsl(189, 90%, 60%),
+    hsl(214, 56%, 42%)
+  );
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+.blue {
+  background: linear-gradient(
+    hsl(186, 76%, 16%),
+    hsl(223, 90%, 60%),
+    hsl(240, 56%, 42%)
+  );
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+.hyacinth {
+  background: linear-gradient(
+    hsl(246, 76%, 16%),
+    hsl(253, 90%, 60%),
+    hsl(250, 56%, 42%)
+  );
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
